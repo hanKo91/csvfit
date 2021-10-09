@@ -6,7 +6,12 @@ setup(
   author='Dominik Hanko',
   author_email='dominik.hanko91@gmail.com',
   description='system identification with csv files as inputs',
-  packages=find_packages(include=['fit', 'fit.*', 'test', 'test.*']),
+  packages=find_packages(
+    include=[
+      'csvfit', 'csvfit.*',
+      'test', 'test.*'
+    ]
+  ),
   package_data={'fit': ['test/example.zip']},
   install_requires=[
     'click >=8.0.1',
